@@ -2,7 +2,7 @@
 '''
 #=====================================================
 #     FileName: tweet163_crawler.py
-#         Desc: download html pages from sina_weibo and save to local files 
+#         Desc: download html pages from 163 tweet and save to local files 
 #       Author: DianaCody
 #      Version: 1.0
 #        Since: 2014-09-27 15:20:21
@@ -15,6 +15,7 @@ import re
 import chardet
 
 # sina tweet's url = 'http://s.weibo.com/wb/topic&nodup=1&page=20' 
+# 163 tweet's url = 'http://t.163.com/tag/topic&nodup=1&page=20'
 def writeHtml(url, start_page, end_page):
     for i in range(start_page, end_page+1):
         FileName = string.zfill(i, 3)
@@ -55,8 +56,8 @@ if __name__ == '__main__':
     print'#       Version: 1.0                    '
     print'#        Author: DianaCody              '
     print'#      Language: Python 2.7             '
-    print'#          Desc: Download html pages from sina_weibo and save to local files,'
-    print'#                and read each tweet of your key    '
+    print'#          Desc: Download html pages from 163 tweet and save to local files,'
+    print'#                and read each tweet of your searchword    '
     print'#         Since: 2014-09-27             '
     print'#--------------------------------------------------------------------------'  
     print ''
